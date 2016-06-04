@@ -1,11 +1,25 @@
 .sidebar {
 	width: 30%;
-	float: left;
+	// float: left;
 	ul {
 		margin: 0;
 		padding: 0;
 		li {
 			list-style: none;
+
 		}
+	}
+}
+
+form#searchform {
+    display: flex;
+    flex-direction: column;
+    input#s {
+        width: 250px;
+        height: 30px;
+	}
+	input.searchsubmit {
+	    width: 100px;
+	    margin: 10px 0;
 	}
 }

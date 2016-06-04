@@ -1,0 +1,35 @@
+.mainContact {
+	.container {
+		// max-width: 100%;
+	    // display: flex;
+	    padding: 10px 50px;
+	    // background-color: black;
+	    // justify-content: space-between;
+    	color: black;		
+	   .content {
+            width: 100%;
+            margin-right: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .formContainer {
+                display: flex;
+                flex-direction: row;
+            }
+       }
+    }
+}
+.formFields {
+    // width: calc(50% - 2%);
+    // margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.formInfo {
+    max-width: calc(50% - 1%);
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+}

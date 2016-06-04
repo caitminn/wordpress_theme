@@ -1,7 +1,16 @@
 <footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
-  </div>
+	<div class="container">
+		<div class="copyRight">
+			<p>&copy; Caitlin MacMinn <?php echo date('Y'); ?></p>
+		</div>
+		<div class="socialIcons">
+			<?php wp_nav_menu( array(
+			'container' => '<div>',
+			'theme_location' => 'footer'
+			)); ?>
+			
+		</div>
+	</div>
 </footer>
 
 <script>

@@ -8,8 +8,13 @@
 */
 
 @import 'normalize';
+@import 'variables';
 @import 'typography';
+@import 'header';
 @import 'navigation';
+@import 'contact';
+@import 'index';
+@import 'single';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
@@ -27,16 +32,16 @@ body {
 	color: #333;
 }
 
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-}
+// .container {
+// 	max-width: 1200px;
+// 	margin: 0 auto;
+// 	// display: flex;
+// }
 
-.content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
-}
+// .content {
+// 	width: 65%;
+// 	margin-right: 5%;
+// }
 
 .full {
 	width: 100%;

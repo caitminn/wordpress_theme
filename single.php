@@ -1,11 +1,22 @@
 <?php get_header(); ?>
+    <section class="heroImage">
+        <?php $image_id = get_post_thumbnail_id($post_id, 'small');
+            $image_url = wp_get_attachment_url($image_id);
+        ?>           
+        <img src="<?php echo $image_url; ?>" alt="">
 
+    </section>
 <div class="main">
   <div class="container">
+
+
     <div class="content">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+          
+
           <h1 class="entry-title"><?php the_title(); ?></h1>
 
           <div class="entry-meta">

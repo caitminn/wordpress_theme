@@ -1,0 +1,42 @@
+.mainIndex {
+	.container {
+		max-width: 100%;
+	    display: flex;
+        flex-direction: column;
+	    padding: 50px 50px;
+        text-align: center;
+    	color: black;		
+	   .content {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        	// margin-right: 5%;
+        	article {
+        		width: calc(33% - 2%);
+        		margin: 0 1%;
+        		
+        		img {
+        			max-width: 100%;
+        			display: block;
+        			// margin: 0;
+        			// padding: 0;
+        		}
+        		div {
+        			margin-top: 0;
+        			padding: 20px 10px;
+        			border-right: 1px solid black;
+        			border-bottom: 1px solid black;
+        			border-left: 1px solid black;
+	        		.entry-title {
+	    			    text-align: center;
+	    			    margin: 0;
+	        		}
+                    .entry-content {
+                        text-align: left;
+                    }
+        		}
+        	}
+        }
+    }
+}
