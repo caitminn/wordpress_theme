@@ -23,7 +23,8 @@ function theme_setup() {
   * adding additional menus to the array. */
 	register_nav_menus( array(
 		'primary' => 'Primary Navigation',
-		'footer' => 'Footer Navigation'
+		'footer' => 'Footer Navigation',
+		'info' => 'Information Footer'
 	) );
 
 	/*

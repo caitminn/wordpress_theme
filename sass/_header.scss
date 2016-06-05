@@ -1,11 +1,13 @@
 header {
 	.container {
-		max-width: 100%;
-		padding: 0 50px;
+		width: 100%;
+		padding: 0 100px;
 	    background-color: black;
 	    display: flex;
 	    justify-content: space-between;
 	    align-items: center;
+	    position: fixed;
+	    top: 0;
 		h1 {
 			color: $white;
 			text-transform: lowercase;

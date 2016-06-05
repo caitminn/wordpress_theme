@@ -1,17 +1,21 @@
 .mainContact {
+    background: linear-gradient(0deg, rgba(235,103,103,0.5), rgba(235,103,103,0.5)),
+        url('images/gplaypattern.png');
+    background-repeat: repeat;
+    position: absolute;
+    top: 80px;
 	.container {
-		// max-width: 100%;
-	    // display: flex;
-	    padding: 10px 50px;
-	    // background-color: black;
-	    // justify-content: space-between;
-    	color: black;		
+	    padding: 10px 100px;		
 	   .content {
             width: 100%;
             margin-right: 5%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            // div.content > h4 {
+            //     text-transform: uppercase;
+            //     color: $pink;
+            // }
             .formContainer {
                 display: flex;
                 flex-direction: row;
@@ -19,17 +23,39 @@
        }
     }
 }
+.formFields,
+.formInfo {
+    width: calc(50% - 3%);   
+}
 .formFields {
-    // width: calc(50% - 2%);
-    // margin-right: 2%;
+    margin-right: 3%;
     display: flex;
     flex-direction: column;
+    input[type=text], 
+    input[type=email], 
+    textarea {
+        background-color: rgba(255,255,255,0.1);
+        border: 1px solid $gray;
+        width: 450px;
+        height: 40px;
+        color: $gray;
+        & ::before {
+            padding-bottom: 20px;
+        }
+    }
 
-
+// &#9990;
 }
 .formInfo {
-    max-width: calc(50% - 1%);
-    margin-left: 1%;
+    margin-left: 3%;
     display: flex;
     flex-direction: column;
+}
+
+h4 {
+    color: white;
+    text-transform: uppercase;
+}
+p {
+    color: $gray;
 }

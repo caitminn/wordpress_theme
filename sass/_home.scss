@@ -2,28 +2,39 @@
 
 }
 
-.main {
+.mainHome {
 	.container {
 		max-width: 100%;
 	    display: flex;
+        flex-direction: column;
 	    padding: 10px 50px;
     	color: black;		
 	   .content {
-            width: calc(70% - 10%);
+            width: 100%;
             margin-right: 10%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
         }
         .sidebar {
-            width: 30%;
+            width: 100%;
             ul {
                 margin: 0;
                 padding: 0;
+                display: flex;
+                justify-content: space-between;
                 li {
                     list-style: none;
+                    width: 33%;
                 }
             }
         }
+    }
+}
+
+#recent-posts-2 {
+    ul {
+        display: flex;
+        flex-direction: column;
     }
 }
