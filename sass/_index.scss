@@ -1,21 +1,25 @@
 .mainIndex {
+    padding: 50px 0;
+    background: linear-gradient(0deg, rgba(245,202,95,0.5), rgba(245,202,95,0.5)),
+        url('images/gplaypattern.png');
+    background-repeat: repeat;
+    position: relative;
+    top: 100px;
 	.container {
-		max-width: 100%;
-	    display: flex;
-        flex-direction: column;
-	    padding: 50px 50px;
         text-align: center;
-    	color: black;		
+        .pageSubtitle:before {
+            background: $yellow;
+            left: 100px;
+        }		
 	   .content {
             width: 100%;
+            padding: 50px 0;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-        	// margin-right: 5%;
         	article {
         		width: calc(33% - 2%);
         		margin: 0 1%;
-        		
         		img {
         			max-width: 100%;
         			display: block;
@@ -25,15 +29,43 @@
         		div {
         			margin-top: 0;
         			padding: 20px 10px;
-        			border-right: 1px solid black;
-        			border-bottom: 1px solid black;
-        			border-left: 1px solid black;
+        			border-right: 1px solid $gray;
+        			border-bottom: 1px solid $gray;
+        			border-left: 1px solid $gray;
 	        		.entry-title {
+                        margin: 0;
+                        padding-top: 15px;
+                        font-family: 'Lato', sans-serif;
+                        font-size: 1.1rem;
+                        letter-spacing: 0.2rem;
+                        color: white;
 	    			    text-align: center;
-	    			    margin: 0;
+                        text-transform: uppercase;
+                        a {
+                            color: white;
+                            &:hover {
+                                color: darken($yellow, 20);
+                                transition: all 0.5s ease;
+                            }
+                        }
 	        		}
                     .entry-content {
                         text-align: left;
+                        p {
+                            margin-bottom: 0;
+                            color: $gray;
+                            line-height: 1.5rem;
+                        }
+                        .readMore {
+                            display: block;
+                            padding: 20px 0;
+                            color: white;
+                            text-decoration: underline;
+                            &:hover {
+                                color: darken($yellow, 20);
+                                transition: all 0.5s ease;
+                            }
+                        }
                     }
         		}
         	}

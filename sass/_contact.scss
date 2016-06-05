@@ -2,31 +2,29 @@
     background: linear-gradient(0deg, rgba(235,103,103,0.5), rgba(235,103,103,0.5)),
         url('images/gplaypattern.png');
     background-repeat: repeat;
-    position: absolute;
-    top: 80px;
-	.container {
-	    padding: 10px 100px;		
+    position: relative;
+    top: 100px;
+	.container {	
 	   .content {
             width: 100%;
-            margin-right: 5%;
+            padding: 50px 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            // div.content > h4 {
-            //     text-transform: uppercase;
-            //     color: $pink;
-            // }
             .formContainer {
+                padding: 60px 0;
                 display: flex;
                 flex-direction: row;
             }
-       }
+        }
     }
 }
+
 .formFields,
 .formInfo {
     width: calc(50% - 3%);   
 }
+
 .formFields {
     margin-right: 3%;
     display: flex;
@@ -34,7 +32,7 @@
     input[type=text], 
     input[type=email], 
     textarea {
-        background-color: rgba(255,255,255,0.1);
+        background-color: rgba(255, 255, 255, 0.1);
         border: 1px solid $gray;
         width: 450px;
         height: 40px;
@@ -43,19 +41,32 @@
             padding-bottom: 20px;
         }
     }
-
-// &#9990;
+    input[type=submit] {
+        color: $gray;
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 100px;
+        height: 30px;
+        text-transform: uppercase;
+        border: 1px solid $gray;
+    }
 }
+// &#9990;
+
 .formInfo {
     margin-left: 3%;
     display: flex;
     flex-direction: column;
+    h4 {
+        margin: 0;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.1rem;
+        letter-spacing: 0.2rem;
+        color: white;
+        text-transform: uppercase;
+    }
 }
 
-h4 {
-    color: white;
-    text-transform: uppercase;
-}
+
 p {
     color: $gray;
 }

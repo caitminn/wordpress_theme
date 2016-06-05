@@ -8,8 +8,9 @@
             <?php // Start the loop ?>
             <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-            <h4><?php the_title(); ?></h4>
-            <h2><?php the_field('subtitle'); ?></h2>
+            <h4 class="pageTitle"><?php the_title(); ?></h4>
+            <h2 class="pageSubtitle"><?php the_field('subtitle'); ?></h2>
+            
             <div class="formContainer">
                 <div class="formFields">
                     <?php the_field('contact_form');?>

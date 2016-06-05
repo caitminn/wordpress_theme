@@ -1,6 +1,6 @@
 .sidebar {
 	width: 30%;
-	// float: left;
+	padding-top: 30px;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -15,11 +15,44 @@ form#searchform {
     display: flex;
     flex-direction: column;
     input#s {
+    	padding: 0 10px;
         width: 250px;
-        height: 30px;
+        height: 40px;
+        color: $gray;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid $gray;
 	}
 	input.searchsubmit {
-	    width: 100px;
-	    margin: 10px 0;
+	    margin: 20px 0;
+	    width: 150px;
+	    height: 40px;
+	    color: $gray;
+	    text-transform: uppercase;
+	    background-color: rgba(255, 255, 255, 0.1);
+	    border: 1px solid $gray;
+	}
+}
+.widget-title {
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 0.2rem;
+	color: white;
+	text-transform: uppercase; 
+}
+.cat-item a {
+	font-family: 'Prata', serif;
+	color: white;
+	text-transform: lowercase;
+	&:hover {
+	    color: darken($gray, 20);
+	    transition: all 0.5s ease;
+	}
+}
+li a {
+	font-family: 'Prata', serif;
+	color: white;
+	text-transform: lowercase;
+	&:hover {
+	    color: darken($gray, 20);
+	    transition: all 0.5s ease;
 	}
 }

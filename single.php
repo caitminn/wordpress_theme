@@ -6,7 +6,7 @@
         <img src="<?php echo $image_url; ?>" alt="">
 
     </section>
-<div class="main">
+<div class="mainSingle">
   <div class="container">
 
 

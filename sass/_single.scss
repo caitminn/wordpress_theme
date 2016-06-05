@@ -2,18 +2,92 @@
 
 }
 
-.main {
+.mainSingle {
+    // padding: 50px 0;
+    background: linear-gradient(0deg, rgba(153, 153, 153, 0.5), rgba(153, 153, 153, 0.5)),
+        url('images/gplaypattern.png');
+    background-repeat: repeat;
+    // position: relative;
+    // top: 100px;
 	.container {
-		max-width: 100%;
-	    display: flex;
-	    padding: 10px 50px;
-    	color: black;		
+	    display: flex;		
 	   .content {
             width: calc(70% - 10%);
             margin-right: 10%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            .entry-title {
+                // margin: 0;
+                font-family: 'Lato', sans-serif;
+                // font-size: 1.1rem;
+                letter-spacing: 0.2rem;
+                color: white;
+                text-transform: uppercase;
+                }
+            .entry-meta {
+                span, a {
+                font-family: 'Lato', sans-serif;
+                color: white;  
+                text-transform: uppercase; 
+                }
+                a span {
+                    &:hover {
+                    color: darken($gray, 20);
+                    transition: all 0.5s ease;
+                    }
+                }
+                a {
+                    &:hover {
+                    color: darken($gray, 20);
+                    transition: all 0.5s ease;
+                    }
+                }
+            }
+            .entry-utility {
+                font-family: 'Lato', sans-serif;
+                color: white;  
+                text-transform: uppercase; 
+                a {
+                    color: white;
+                    &:hover {
+                    color: darken($gray, 20);
+                    transition: all 0.5s ease;
+                    }
+                }
+            }
+            .nav-previous {
+                a {
+                    color: white;
+                    &:hover {
+                    color: darken($gray, 20);
+                    transition: all 0.5s ease;
+                    }
+                }
+            }
+        }
+        #comments {
+            #reply-title {
+                font-family: 'Lato', sans-serif;
+                letter-spacing: 0.2rem;
+                color: white;
+                text-transform: uppercase; 
+            }
+            #comment {
+                color: $gray;
+                background-color: rgba(255, 255, 255, 0.1);
+                text-transform: uppercase;
+                border: 1px solid $gray;
+            }
+            input[type=submit] {
+                margin: 20px 0;
+                width: 150px;
+                height: 40px;
+                color: $gray;
+                text-transform: uppercase;
+                background-color: rgba(255, 255, 255, 0.1);
+                border: 1px solid $gray;
+            }
         }
         .sidebar {
             width: 30%;

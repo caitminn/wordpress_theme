@@ -1,14 +1,12 @@
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
-	.container {
-		max-width: 100%;
-	    display: flex;
-	    padding: 10px 100px;
-	    background-color: black;
-	    justify-content: space-between;
-    	color: $white;		
+    position: relative;
+    bottom: -100px;
+    background-color: black;
+	color: $white;		
+    .container {
+        display: flex;
+        justify-content: space-between;
 	    .copyRight {
 
 	    }

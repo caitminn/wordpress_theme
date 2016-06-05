@@ -6,9 +6,9 @@
 <div class="mainIndex">
 	<div class="container">
 
-		<h4><?php echo apply_filters('the_title', get_page( get_option('page_for_posts') )->post_title); ?>
+		<h4 class="pageTitle"><?php echo apply_filters('the_title', get_page( get_option('page_for_posts') )->post_title); ?>
 		</h4>
-		<h2>
+		<h2 class="pageSubtitle">
 			<?php the_field('subtitle', get_option('page_for_posts')); ?>
 		</h2>
 
