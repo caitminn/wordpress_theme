@@ -30,6 +30,11 @@ form#searchform {
 	    text-transform: uppercase;
 	    background-color: rgba(255, 255, 255, 0.1);
 	    border: 1px solid $gray;
+	    &:hover {
+	        background: $green;
+	        color: white;
+	        transition: all 0.5s ease;
+	    }
 	}
 }
 .widget-title {
@@ -38,21 +43,35 @@ form#searchform {
 	color: white;
 	text-transform: uppercase; 
 }
+
+.tagcloud a {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid $gray;
+    &:hover {
+        background: $pink;
+        color: white;
+        transition: all 0.5s ease;
+
+    }
+}
+
 .cat-item a {
 	font-family: 'Prata', serif;
 	color: white;
 	text-transform: lowercase;
 	&:hover {
-	    color: darken($gray, 20);
-	    transition: all 0.5s ease;
+	    color: $blue;
+	    transition: all 0.3s ease;
 	}
 }
-li a {
+
+.widget_recent_entries li a {
 	font-family: 'Prata', serif;
 	color: white;
 	text-transform: lowercase;
 	&:hover {
-	    color: darken($gray, 20);
+	    color: $yellow;
 	    transition: all 0.5s ease;
 	}
 }

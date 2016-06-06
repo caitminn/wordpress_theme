@@ -1,40 +1,78 @@
-.heroImage {
-
+.slider {
+    top: 100px;
+    position: relative;
+    z-index: 2;
 }
 
 .mainHome {
-	.container {
-		max-width: 100%;
-	    display: flex;
-        flex-direction: column;
-	    padding: 10px 50px;
-    	color: black;		
+    background: linear-gradient(0deg, rgba(170, 207, 101, 0.5), rgba(170, 207, 101, 0.5)),
+        url('images/gplaypattern.png');
+    background-repeat: repeat;
+    top: 58px;
+    position: relative;
+	.container {	
+        display: flex;
 	   .content {
-            width: 100%;
-            margin-right: 10%;
+            width: calc(60% - 5%);
+            margin-right: 5%;
+            padding-top: 50px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-        }
-        .sidebar {
-            width: 100%;
-            ul {
-                margin: 0;
-                padding: 0;
-                display: flex;
-                justify-content: space-between;
-                li {
-                    list-style: none;
-                    width: 33%;
-                }
+            .pageSubtitle:before {
+                background: $green;
             }
         }
+        .newsletter {
+            width: 40%;
+            padding: 30px;
+            background: rgba(153, 153, 153, 0.5);
+            h4 {
+                padding: 10px 0;
+            }
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                text-transform: lowercase;
+                input[type=text], 
+                input[type=email] {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    border: 1px solid $gray;
+                    width: 375px;
+                    height: 40px;
+                    color: $gray;
+                }
+                .es_lablebox {
+                    display: block;
+                    font-family: 'Prata', serif;
+                    color: white;
+                    font-size: 1.2rem;
+                    padding: 10px;
+                }
+                .es_textbox_button {
+                    display: block;
+                    color: $gray;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    width: 150px;
+                    height: 40px;
+                    text-transform: uppercase;
+                    border: 1px solid $gray;
+                    &:hover {
+                        color: white;
+                        background: $green;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+        }   
     }
 }
 
-#recent-posts-2 {
-    ul {
-        display: flex;
-        flex-direction: column;
-    }
+footer {
+    position: relative;
+    bottom: -58px;
 }
+
+
+

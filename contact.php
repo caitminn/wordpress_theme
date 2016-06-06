@@ -2,6 +2,14 @@
 
 <?php get_header();  ?>
 
+    <section class="heroImage">
+        <?php $image_id = get_post_thumbnail_id($post_id, 'small');
+            $image_url = wp_get_attachment_url($image_id);
+        ?>           
+        <img src="<?php echo $image_url; ?>" alt="">
+
+    </section>
+
     <div class="mainContact">
         <div class="container">
             <div class="content">
@@ -29,5 +37,5 @@
             </div> <!-- /.content -->
         </div> <!-- /.container -->
     </div> <!-- /.main -->
-
+    <?php wp_footer(); ?>
 <?php get_footer(); ?>

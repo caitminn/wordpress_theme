@@ -1,13 +1,16 @@
+.heroImage {
+    position: relative;
+    top: 100px;
+}
+
 .mainContact {
     background: linear-gradient(0deg, rgba(235,103,103,0.5), rgba(235,103,103,0.5)),
         url('images/gplaypattern.png');
     background-repeat: repeat;
-    position: relative;
-    top: 100px;
 	.container {	
 	   .content {
             width: 100%;
-            padding: 50px 0;
+            padding-top: 150px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -29,6 +32,16 @@
     margin-right: 3%;
     display: flex;
     flex-direction: column;
+    form {
+        p {
+            font-family: 'Lato', sans-serif;
+            color: white;
+            text-transform: uppercase; 
+        }
+        .fa {
+            color: white;
+        } 
+    }
     input[type=text], 
     input[type=email], 
     textarea {
@@ -44,13 +57,17 @@
     input[type=submit] {
         color: $gray;
         background-color: rgba(255, 255, 255, 0.1);
-        width: 100px;
-        height: 30px;
+        width: 150px;
+        height: 40px;
         text-transform: uppercase;
         border: 1px solid $gray;
+        &:hover {
+            background: white;
+            color: $pink;
+            transition: all 0.3s ease;
+        }
     }
 }
-// &#9990;
 
 .formInfo {
     margin-left: 3%;
@@ -66,7 +83,11 @@
     }
 }
 
-
 p {
     color: $gray;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
 }

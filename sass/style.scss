@@ -16,6 +16,7 @@
 @import 'single';
 @import 'home';
 @import 'contact';
+@import 'default';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
@@ -78,5 +79,11 @@ body {
     bottom: -11px;
     z-index: 1;
   }
+}
+
+p {
+  color: $gray;
+  font-family: 'Lato', sans-serif;
+
 }
 

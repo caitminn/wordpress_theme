@@ -14,6 +14,10 @@ header {
 			text-transform: lowercase;
 			a {
 				color: $white;
+				&:hover {
+					color: $green;
+					transition: all 0.3s ease;
+				}
 			}
 		}
 		nav.mainNav {
@@ -26,13 +30,17 @@ header {
 					margin-right: 10px;
 					a {
 						font-family: 'Lato', sans-serif;
-						color: #333;
 						padding: 10px;
 						color: white;
 						text-transform: uppercase;
+						&:hover {
+							color: $blue;
+							transition: all 0.3s ease;
+						}
 					}
 				}
 			}
+			
 		}
 	}
 }

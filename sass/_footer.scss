@@ -1,7 +1,7 @@
 footer {
     width: 100%;
-    position: relative;
-    bottom: -100px;
+    // position: relative;
+    // bottom: -100px;
     background-color: black;
 	color: $white;		
     .container {
@@ -20,6 +20,10 @@ footer {
     				a {
     					padding: 10px;
     					color: white;
+                        &:hover {
+                            color: $pink;
+                            transition: all 0.3s ease;
+                        }
     				}
     			}
     		}
